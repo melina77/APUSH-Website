@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+  h1 {text-align: center;}
+  p {text-align: center;}
+  div {text-align: center;}
+  body{
+    font-family: 'Times New Roman', serif;
+  }
+</style>
+</head>
+<style>
+.contentt {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  font-family: 'Times New Roman', serif;
+  border-radius: 6px;
+}
+</style>
+<body>
+    <div class="contentt">
+    <head></head>
+    <body>
+    <img src="https://miro.medium.com/max/770/0*YzwZEqmZ8zcYuIX8.jpg" alt="image" style="width:770px;height:340px;">
+    </body>
+    <h1> Transformation of Communication Timeline </h1>
+    <p>From the very first American printing press to modern communications with the advancement of smartphones, America has had a far ranging history with technology. We are still currently in the Information Age that was sparked by the techolonogical revoluation sparked by personal computers and communication devices. Here is a timeline of landmark inventions that drastically changed American society.</p>
+    <img src="https://inspiringnsw.org.au/wp-content/uploads/2017/05/ia_fourth_industrial_revolution.jpg" alt="Technological Revolution" style="width:600px;height:340px;">
+    <div>By Jayleen Rocha and Melina Eftekhari</div>
+</div>
+</body>
+
+<!-- <div>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.btn {
+  border: none;
+  background-color: inherit;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+/* Green */
+.success {
+  color: green;
+}
+
+.success:hover {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Blue */
+.info {
+  color: dodgerblue;
+}
+
+.info:hover {
+  background: #2196F3;
+  color: white;
+}
+
+/* Orange */
+.warning {
+  color: orange;
+}
+
+.warning:hover {
+  background: #ff9800;
+  color: white;
+}
+
+/* Red */
+.danger {
+  color: red;
+}
+
+.danger:hover {
+  background: #f44336;
+  color: white;
+}
+
+/* Gray */
+.default {
+  color: black;
+}
+
+.default:hover {
+  background: #e7e7e7;
+}
+</style>
+</head>
+<body>
+
+<h2>Categories</h2>
+<p>Inventions and their societal impacts</p>
+
+<button class="btn success">1600s</button>
+<button class="btn info">1700s</button>
+<button class="btn warning">1800s</button>
+<button class="btn danger">1900s</button>
+<button class="btn default">2000s and beyond</button>
+
+</body>
+</html>
+</div> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #474e5d;
+  font-family: 'American Typewriter',serif;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #00CED1;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+  
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+  left: 31px;
+  }
+  
+  /* Full-width containers */
+  .container {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+  left: 15px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .right {
+  left: 0%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="timeline">
+  <div class="container left">
+    <div class="content">
+      <h2>1639: First printing press in America</h2>
+      <p>The printing press was brought to the colonies in 1638 by Puritan Reverend Joseph Glover. The Freeman's Oath became the first printed piece in the colonies. The printing press transformed the world in many different ways as it was portable and helped disseminate knowledge wider and faster than ever before. During the American Revolution, the printing press allowed the printing of flyers which spread support for revolt against Britain, ultimately helping the case of the Revolution. This printer was later used in the First and Second Great Awakenings in order to spread religious sentiment.  Abolitionist movements used the printing press to spread texts such as David Walker's Appeal to Colored Citizens of the World.</p>
+    </div>
+  </div>
+    <div class = "container left">
+
+      <img src="https://www.mediastorehouse.com.au/p/497/printing-press-1639-first-printing-press-7535089.jpg.webp" alt="First Printing Press in the Colonies" style="width:420px;height:420px;">
+
+  </div>
+
+
+
+
+  <div class="container right">
+    <div class="content">
+      <h2>1810: Photography</h2>
+      <p>Photography was invented in France by Joseph Nicéphore Niépce. Since its initial invention, cameras have been improved for photo quality and efficiency eventually leading up to the cameras that we see and use on our phones today. The impacts of being able to see images included a greater social awareness which allowed people's problems to be seen by society.  For example, Jacob Riis used photography during the Guilded Age in his documentary How the Other Half Lives, which showed pictures of slums in United States urban centers to spread awareness of poverty.</p>
+    </div>
+  </div>
+  <div class = "container right">
+
+    <img src="https://static01.nyt.com/images/2018/03/07/lens/07-paper1/07-paper1-superJumbo.jpg" alt="One of the Early Images taken in American History" style="width:420px;height:420px;">
+
+</div>
+  <div class="container left">
+    <div class="content">
+      <h2>1837: Telegraph</h2>
+      <p> Samuel Morse developed a system that sent out a signal in a series of dots and dashes, each combination representing one letter of the alphabet. The telegraph was important due to the fact that it facilitated the growth in railroads, consolidated financial and commodity markets, and reduced information costs within and between firms by allowing for an accessible means of communication. It impacted American society because it allowed communication between long distances while being on the same continent. This is similar to today's revolution of smartphones through which we can send text messages to maintain instant communication through vast distances. As the frontier of the United States was expanded and settled, the invention of the telegram followed and allowed for transcontinental commmunication.</p>
+    </div>
+  </div>
+  <div class = "container left">
+
+    <img src="https://otecorporation.com/wp-content/uploads/2015/10/harp11.jpg" alt="Telgraph Impact in America" style="width:420px;height:420px;">
+
+</div>
+  <div class="container right">
+    <div class="content">
+      <h2>1860: Recorded Sound</h2>
+      <p>Recorded sound was implemented by Thomas Jefferson and impacted American society by improving communications. Rather than relying on printed sources, recorded sound was faster and paved the way for better communication as those who listened to recordings could hear tones and attitudes. Recorded sound eventually allowed for sound on television, which revolutionized music videos, transforming the world of music in later years.  This caused a more homogenized national culture to form as recorded sound dispersed across the United States through the use of radios, leading all Americans to be able to hear the same broadcasts.</p>
+    </div>
+  </div>
+  <div class = "container right">
+
+    <img src="https://quietcommunities.org/wp-content/uploads/2017/05/Thomas-Edison.jpeg" alt="First Recorded Sound Thomas Edison" style="width:420px;height:420px;">
+
+</div>
+  <div class="container left">
+    <div class="content">
+      <h2>1876: Telephone</h2>
+      <p>Alexander Graham Bell successfully received a patent for the telephone and secured the rights to his invention in 1876. The impact that the telephone had on American society is similar to that of the previous inventions, that being communication. The telephone made it easier for businesses to communicate with one another. The telephone paved the way for the smartphones that we use today for communication. At the time it was invented, the introduction of the telephone was huge for American society since it allowed people anywhere across the nation to be able to communicate instantly and hear each other's voices.</p>
+    </div>
+  </div>
+  <div class = "container left">
+
+    <img src="https://cdn.wionews.com/sites/default/files/styles/story_page/public/2022/03/10/246635-alexander-graham-bell.jpg" alt="Alexander Graham Bell First Telephone" style="width:500px;height:370px;">
+
+</div>
+  <div class="container right">
+    <div class="content">
+      <h2>1903: Airplane</h2>
+      <p>The Wright brothers, Orville and Wilbur Wright, made the first sustained aircraft which was heavier-than-air powered and controlled aircraft. The impact that the airplane had on American society was huge, but not fully developed until decades later. The airplane allowed for the transportation of people, animals and luggage in a very short amount of time, thus making transportation all the more effective. This aircraft eventually led up to the airplanes we use today through commercial airlines, making travel overall more secure, safe, and comfortable. Planes were also used in warfare starting in World War 1.</p>
+    </div>
+  </div>
+  <div class = "container right">
+
+    <img src="https://airandspace.si.edu/exhibitions/wright-brothers/online/images/fly/1903_banner_right.jpg" alt="Wright Brothers First Airplane" style="width:500px;height:370px;">
+
+
+</div>
+  <div class = "container left">
+    <div class = "content">
+      <h2>1906: Radio</h2>
+      <p>On christmas eve of 1906, one of the first broadcasts successfully aired to transmit sound over a radio. The impact that the radio had on American society was that of creating a means for one-way communication to the public. This technology improved communication due to the fact that Americans no longer had to read a newspaper to get the news, the news was able to be heard on the radio along with live events, music, and many other new opportunities. </p>
+    </div>
+  </div>
+  <div class = "container left">
+    <img src="https://bloximages.newyork1.vip.townnews.com/observer-reporter.com/content/tncms/assets/v3/editorial/4/be/4bec3202-1ab9-11eb-a3e9-0fdeb3d59b40/5f9c1e3703082.image.jpg?crop=1214%2C1214%2C247%2C0&resize=1214%2C1214&order=crop%2Cresize" alt="One of the First Radio Broadcasts" style="width:500px;height:500px;">
+  
+</div>
+  <div class="container right">
+    <div class="content">
+      <h2>1910s: Television</h2>
+      <p>The very first television in the 1910s had a screen no larger than a postage stamp and created a low-resolution image using reflective lights. This has come a long way as we now have flat screen TVs which have the same features as a smartphone. Television took the advancement of live coverage brought by radio and being able to hear live sound to an entirely new level.  Now not only could Americans hear a live event, they could see it with their own eyes despite physical boundaries.  This was a huge development for national unity and culture since all Americans watched the same shows and news coverage. The impact that television had on the United States is that it influenced the way that people think about important social issues such as the Vietnam War since they were able to see the war happen live on television. In other words, television made individuals more socially aware and unified.  </p>
+    </div>
+  </div>
+  <div class = "container right">
+
+    <img src="https://estaticos.megainteresting.com/media/cache/760x570_thumb/uploads/images/pyr/5dd68ea65cafe826263c9876/tele.jpg" alt="Children enjoying Television" style="width:500px;height:500px;">
+
+</div>
+  <div class="container left">
+    <div class="content">
+      <h2>1945/1946: Programming and Computers</h2>
+      <p>The first digital computer known as Electronic Numerical Integrator and Computer (ENIAC) could solve 5,000 problems in one second, faster than any technological advancement ever seen before. The ability to program helped technology significantly as it allowed for efficient machine runtime and easier use by humans through repetitive pre-written programs. The impact that the computer had on American society is that it made writing papers faster and more efficient, making it possible to post articles or news in less time than it would take to make a newspaper.  Aside from online news, the computer became commonly used in workplaces, to transfer knowledge and ideas, create digital imaging, and perform many other tasks that brought America together as a society by allowing for increased cooperation in the digital realm. In today’s society, computers are a part of our day to day life and make everything from schoolwork to banking to communication extremely efficient.  </p>
+    </div>
+  </div>
+  <div class = "container left">
+
+    <img src="https://www.computerhope.com/cdn/eniac.jpg" alt="First Digital Computer" style="width:500px;height:500px;">
+
+
+</div>
+  <div class = "container right">
+    <div class = "content">
+      <h2>1960s: Internet</h2>
+      <p>The first workable prototype of the Internet came in the late 1960s with the creation of ARPANET, or the Advanced Research Projects Agency Network. The impact that the internet had on the United States was that it changed business, education, government, healthcare, and even the ways in which we are able to interact with our loved ones. In other words, it greatly improved communications. The internet in modern times is embedded into society as every bank, doctors office, and school building. The invention of the internet mainly allowed more people to reap the benefits of personal computers since individuals could access online sites and communicate using the internet despite physical distance. </p>
+    </div>
+  </div>
+  <div class = "container right">
+    <img src="https://www.pcr-online.biz/wp-content/uploads/1-sabre-system-networking-webjpg.jpg" alt="Invention of the internet" style="width:500px;height:500px;">
+  
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>1970s: Personal Computer</h2>
+      <p>Kenbak-1 was the first personal computer invented in the 1970s.  The invention of the personal computer allowed for mass consumption of the digital world by Americans.  With the invention of the personal computer, not only were computers used to perform large calculations and access databases, but they were now used for entertainment, communication, schoolwork, and a variety of other tasks since computers were available to the general public. The impact that this computer had on American society is that it allowed every American to have access to the internet and digital world where they could find information in a quick web search and communicate with others online.  This allowed people from all across America and the rest of the world to be able to text and call online with the only limitation being that both parties have internet access and a computer. </p>
+    </div>
+  </div>
+  <div class = "container left">
+
+    <img src="https://herebeanswers.com/wp-content/uploads/2011/10/who-invented-first-personal-computer_1.jpg" alt="Steve Jobs and Wozniak 1977" style="width:500px;height:370px;">
+
+
+</div>
+  <div class = "container right">
+    <div class = "content">
+      <h2>1973: Cell Phone</h2>
+      <p>The first handheld cellular phone call was made in 1973 by Martin Cooper, a Motorola engineer. The main difference between a cell phone and personal computers is that cell phones are portable. Having a portable personal computer that can fit in anyone’s pocket made communication and access to the digital world easier since it allowed anyone to interact with each other through their phones.  The internet was able to be accessed despite location since the cell phone could be taken anywhere and owned personally, creating a sense of privacy.  In today’s society, cellphones are used daily to make phone calls, send text messages, update social media status, view news, interact with coworkers, and perform many other basic tasks making communication more effective and efficient. </p>
+    </div>
+  </div>
+  <div class = "container right">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Steve_Jobs_Headshot_2010-CROP_%28cropped_2%29.jpg/800px-Steve_Jobs_Headshot_2010-CROP_%28cropped_2%29.jpg" alt="Steve Jobs with his second groundbreaking invention" style="width:500px;height:500px;">
+
+
+
+</body>
+</html>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+</style>
+</head>
+<body>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+</body>
+</html>
+
+
